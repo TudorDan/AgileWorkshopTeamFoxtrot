@@ -1,12 +1,59 @@
-def print_menu():
+RESET = "\033[0;0m"
+BLUE = "\033[1;34m"
+
+
+def print_menu(title, list_options):
     """
-    Prints the Enigma project manual
+    Displays a menu. Sample output:
+        Main menu:
+            (1) School Students
+            (2) Statistics
+            (0) Exit program
+    :param title: menu title
+    :param list_options: list of strings - options that will be shown in menu
+    :return: None: This function doesn't return anything it only prints to console.
     """
-    print('''Enigma Manual
-                Run options: [-h | -e | -d] {CipherName} {FileName} {EncryptionKey}
-                   -h : displays this menu; other arguments are ignored.
-                   -e : encrypt and display
-                   -d : decrypt and display
-                       CipherName      : cipher to use when encrypting/decrypting; [rot13, rail-fence, morse]
-                       FileName        : path to file to encrypt/decrypt
-                       EncryptionKey   : Optional -> must be provided if cipher requires a key''')
+    print(title)
+    for index, option in enumerate(list_options):
+        print(f"({index}) {option}")
+
+
+def get_inputs(list_labels, title):
+    """
+    Gets list of inputs from the user.
+    Sample call:
+        get_inputs(["Name","School Class","Subject"],
+                   "Please provide your personal information")
+    Sample display:
+        Please provide your personal information
+        Name <user_input_1>
+        School Class <user_input_2>
+        Subject <user_input_3>
+    :param list_labels: labels of inputs
+    :param title: title of the "input section"
+    :return: list: List of data given by the user. Sample return:
+            [<user_input_1>, <user_input_2>, <user_input_3>]
+    """
+    inputs = []
+    print(title)
+    for item in list_labels:
+        inputs.append(input(f"{item}"))
+    return inputs
+
+
+def print_message(message):
+    """
+    Displays a message (example: ``@message``)
+    :param message: string to be displayed
+    :return: None: This function doesn't return anything it only prints to console.
+    """
+    print(message)
+
+
+def print_table(table, title):
+    print(title)
+    headers = table[0]
+    for i in range(1, len(table)):
+        for index, column in enumerate(table[i]):
+            print(f"{headers[index]}:{BLUE}{column}{RESET} ", end="")
+        print("\n----------------------------------------")
