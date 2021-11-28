@@ -1,7 +1,9 @@
-Name;Class;Subject1;Subject1Mark;Subject2;Subject2Mark
-Johnny 3Fingers;Cowboys 11th Grade;How to Watch Television;8;Palm Reading;7
-Miss Danger;Cowboys 11th Grade;How to Watch Television;10;Palm Reading;9
-Jamal Gangsta LeeRoy;Cowboys 11th Grade;How to Watch Television;7;Palm Reading;6
-The Sleeping Student;Steelers 12th Grade;The Answer to Life;5;The art of walking;9
-Tyrone Shotgun;Steelers 12th Grade;The Answer to Life;4;The art of walking;8
-Sister Switchblades;Steelers 12th Grade;The Answer to Life;6;The art of walking;8
+Name;Class;Subject1;Subject1Mark;Subject2;Subject2Mark;Subject3;Subject3Mark;Subject4;Subject4Mark
+The Sleeping Student;Steelers 12th Grade;How to Watch Television;7;Palm Reading;6;The Answer to Life, The Universe and Everything;5;The art of walking;9
+Johnny 3Fingers;Cowboys 12th Grade;How to Watch Television;8;Palm Reading;7;The Answer to Life, The Universe and Everything;7;The art of walking;6
+Miss Danger;Cowboys 12th Grade;How to Watch Television;5;Palm Reading;9;The Answer to Life, The Universe and Everything;4;The art of walking;10
+Tyrone Shotgun;Steelers 12th Grade;How to Watch Television;6;Palm Reading;6;The Answer to Life, The Universe and Everything;10;The art of walking;4
+Lord Brain;Saints 12th Grade;How to Watch Television;4;Palm Reading;6;The Answer to Life, The Universe and Everything;5;The art of walking;7
+Jamal Gangsta LeeRoy;Cowboys 12th Grade;How to Watch Television;9;Palm Reading;6;The Answer to Life, The Universe and Everything;9;The art of walking;5
+Sister Switchblades;Steelers 12th Grade;How to Watch Television;4;Palm Reading;6;The Answer to Life, The Universe and Everything;5;The art of walking;7
+Donald Duck;Saints 12th Grade;How to Watch Television;4;Palm Reading;6;The Answer to Life, The Universe and Everything;5;The art of walking;7
