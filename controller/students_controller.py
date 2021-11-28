@@ -12,11 +12,11 @@ def choose_operation():
     if option == '1':
         get_all_students()
     elif option == '2':
-        print("Add")
+        display.print_message("Add", True)
     elif option == '3':
-        print("Update")
+        display.print_message("Update", True)
     elif option == '4':
-        print("Delete")
+        display.print_message("Delete", True)
     elif option == '0':
         return False
     else:
@@ -40,4 +40,4 @@ def submenu():
         try:
             running = choose_operation()
         except KeyError as err:
-            display.print_message(str(err))
+            display.print_message(str(err), True)

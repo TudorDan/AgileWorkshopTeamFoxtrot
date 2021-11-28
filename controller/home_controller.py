@@ -8,15 +8,16 @@ def choose():
     if option == '1':
         students_controller.submenu()
     elif option == '2':
-        print("Not implemented yet.")
+        display.print_message("Not implemented yet.", True)
     elif option == '0':
+        display.print_message("Bueno, hasta la vista, companeros!")
         sys.exit(0)
     else:
         raise KeyError("There is no such option.")
 
 
 def handle_menu():
-    display.print_message("Welcome to Universidad Técnica de Buenas Maneras y Pistoleros!")
+    display.print_message("Welcome to 'Universidad Técnica de Buenas Maneras y Pistoleros!'")
     main_options = ["Exit program",
                     "School Students",
                     "Statistics"]
@@ -29,4 +30,4 @@ def menu():
         try:
             choose()
         except KeyError as err:
-            display.print_message(str(err))
+            display.print_message(str(err), True)
