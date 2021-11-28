@@ -60,6 +60,12 @@ def print_message(message, error=False):
 
 
 def print_table(table, title):
+    """
+    Displays data from files
+    :param table: List of lists - the table to print out
+    :param title: Title of the table for printing
+    :return: None: This function doesn't return anything it only prints to console.
+    """
     print(f"{CYAN}{title}{RESET}")
     headers = table[0]
     for i in range(1, len(table)):
