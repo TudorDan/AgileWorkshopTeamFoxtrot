@@ -7,6 +7,13 @@ def get_all_students():
     display.print_table(students, "Students List:")
 
 
+def get_number_students():
+    students = data_manager.get_table_from_file("model/files/students.csv")
+    print(students)
+    no_students = data_manager.get_number_of_students(students)
+    display.print_message(f"Total number of students is: {no_students}")
+
+
 def choose_operation():
     option = display.get_inputs(["Please enter a number: "], "")[0]
     if option == '1':
@@ -17,6 +24,9 @@ def choose_operation():
         display.print_message("Update", True)
     elif option == '4':
         display.print_message("Delete", True)
+    elif option == '6':
+        get_number_students()
+
     elif option == '0':
         return False
     else:
@@ -29,7 +39,8 @@ def handle_submenu():
                "List students",
                "Add a new student",
                "Update student",
-               "Delete student"]
+               "Delete student",
+               "Total number of students"]
     display.print_menu("Student Classes Submenu", options)
 
 
