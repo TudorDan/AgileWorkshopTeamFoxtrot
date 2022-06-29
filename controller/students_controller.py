@@ -6,11 +6,11 @@ def get_all_students():
     students = data_manager.get_table_from_file("model/files/students.csv")
     display.print_table(students, "Students List:")
 
-
 def choose_operation():
     option = display.get_inputs(["Please enter a number: "], "")[0]
     if option == '1':
-        get_all_students()
+        print(get_all_students())
+
     elif option == '2':
         display.print_message("Add", True)
     elif option == '3':
