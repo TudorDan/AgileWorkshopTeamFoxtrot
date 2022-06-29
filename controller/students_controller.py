@@ -1,10 +1,14 @@
 from view import display
 from model import data_manager
 
-
 def get_all_students():
     students = data_manager.get_table_from_file("model/files/students.csv")
     display.print_table(students, "Students List:")
+
+def display_number_school_classes():
+    data = data_manager.get_table_from_file("students.csv")
+    print(data)
+    
 
 
 def choose_operation():
